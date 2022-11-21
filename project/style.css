@@ -159,3 +159,22 @@ main .first .input-area:focus,
 main .second .input-area {
     pointer-events: none;
 }
+
+/* ERROR */
+.error{
+    color: red;
+    background-color: black;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200%;
+    padding: 5%;
+    margin-top: -25%;
+    margin-left: 10%;
+    border-radius: 10px;
+    visibility: hidden;
+}
