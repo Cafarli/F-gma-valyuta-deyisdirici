@@ -1,3 +1,5 @@
+// BY USING XMLHttpRequest
+
 let choices = document.querySelectorAll(".choicelist");
 
 const input = document.querySelector(".workplace .first .input-area");
@@ -28,7 +30,11 @@ function converting() {
     result.value = Math.round(response.result * input_value * 10000) / 10000;
     input_p1.innerText = `1 ${fromCur} = ${cur} ${toCur}`;
     input_p2.innerText = `1 ${toCur} = ${convert_cur} ${fromCur}`;
-  };
+  }
+  request.onerror = function() {
+    document.querySelector('.error').style.visibility = 'visible';
+  }
+
 }
 
 const result = document.querySelector(".workplace .second .input-area");
@@ -45,3 +51,4 @@ choices.forEach((item) => {
     items[i].addEventListener("click", converting);
   }
 });
+
