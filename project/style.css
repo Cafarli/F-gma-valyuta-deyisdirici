@@ -4,6 +4,10 @@ body {
     margin: 0 auto;
     font-family: 'Roboto',Arial, Helvetica, sans-serif;
 }
+
+main {
+    margin: 0 auto;
+}
 main .heading, .workplace {
     display: block;
 }
@@ -143,9 +147,14 @@ main .first .input-area,
         border-radius: 5px;
 }
 
-main .first .input p,
-    .second .input p {
-        margin: -15% 0% 0% 5%;
+main .first .input-area::-webkit-inner-spin-button,
+    .second .input-area::-webkit-inner-spin-button { 
+  appearance: none;
+}
+
+main .first .input .convert,
+    .second .input .convert {
+        margin: -25% 0% 0% 5%;
         color: #C6C6C6;
         font-size: 12px;
         font-weight: 400;
@@ -156,25 +165,11 @@ main .first .input-area:focus,
         outline: none;
 }
 
-main .second .input-area {
-    pointer-events: none;
-}
-
-/* ERROR */
-.error{
-    color: red;
-    background-color: black;
-    width: 30%;
-    height: 30%;
-    position: absolute;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 200%;
-    padding: 5%;
-    margin-top: -25%;
-    margin-left: 10%;
-    border-radius: 10px;
-    visibility: hidden;
+main .first .input .warning,
+    .second .input .warning {
+        color: #ff0000;
+        font-size: 12px;
+        font-weight: 400;
+        width: 70%;
+        visibility: hidden;
 }
