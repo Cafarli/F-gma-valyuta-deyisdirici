@@ -1,0 +1,80 @@
+/* ERROR */
+.error{
+    color: rgb(0, 0, 0);
+    background-color: rgb(246, 230, 205);
+    width: 100%;
+    height: 100%;
+    opacity: 0.95;
+    font-weight: bold;
+    text-align: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    visibility: hidden;
+}
+
+.error .aze {
+    padding-top: 5%;
+    font-size: 40px;
+}
+
+.error .eng {
+
+    font-size: 20px;
+}
+
+.error .glyphicon{
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.error .icons{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.error .exc {
+    color: red;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.error .send {
+    color: red;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}
+
+.error .circle {
+    color: red;
+    top: 0;
+    left: 50%;
+}
+
+.error .cog {
+    color: red;
+    top: 0;
+    left: 10%;
+}
+
+.error .hour {
+    color: red;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.error .warning {
+    color: red;
+    bottom: 0;
+    right: 0;
+}
+
+.error .refresh {
+    color: red;
+    top: 0;
+    right: 0;
+}
