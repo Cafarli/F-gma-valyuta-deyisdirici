@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exchanging</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="error_style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <main>
@@ -43,9 +48,12 @@
                         <li class="choice">GBP</li>
                     </ul>
                 </div>
+
+                
                 <div class="input">
-                        <input class="input-area" >
-                        <p>1 RUB = 0.0135 USD</p>
+                        <input class="input-area" type="number" >
+                        <p class="first warning">Yalnış məlumat daxiletmə!</p>
+                        <p class="convert text">1 RUB = 0.0135 USD</p>
                 </div>
 
             </div>
@@ -63,15 +71,28 @@
                     </ul>
                 </div>
                 <div class="input">
-                    <input class="input-area">
-                    <p>1 RUB = 0.0135 USD</p>
+                    <input class="input-area" type="number">
+                    <p class="second warning">Yalnış məlumat daxiletmə!</p>
+                    <p class="convert text">1 RUB = 0.0135 USD</p>
                 </div>
         </div>
         <div class="error">
-            <p>Nə isə səhv getdi!</p>
+            <div class="text">
+                <p class="aze">Oops! Nə isə səhv getdi!</p>
+                <p class="eng">Oops! Something went wrong!</p>
+            </div>
+            <div class="icons">
+                <i class="glyphicon glyphicon-exclamation-sign exc"></i>
+                <i class="glyphicon glyphicon-send send"></i>
+                <i class="glyphicon glyphicon-ban-circle circle"></i>
+                <i class="glyphicon glyphicon-cog cog"></i>
+                <i class="glyphicon glyphicon-hourglass hour"></i>
+                <i class="glyphicon glyphicon-warning-sign warning"></i>
+                <i class="glyphicon glyphicon-refresh refresh"></i>
+            </div>
         </div>
     </main>
-    <!-- <script src="script2.js"></script> -->
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="script2.js"></script>
 </body>
 </html>
